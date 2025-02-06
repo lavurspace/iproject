@@ -7,7 +7,7 @@ import WishlistPage from "../views/WishlistPage";
 import BaseLayout from "../views/BaseLayout";
 import DetailProductPage from "../views/DetailProductPage";
 
-const baseUrl = "http://localhost:3005";
+const baseUrl = "https://iproject.lavurspace.shop";
 
 const router = createBrowserRouter([
 	{
