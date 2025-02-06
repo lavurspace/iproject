@@ -8,7 +8,6 @@ export default function Card({ product, baseUrl }) {
 	const { id, name, description, rating, stock, price, image } = product;
 	const [isLoading, setIsLoading] = useState(false);
 	const [error, setError] = useState(null);
-	const [imageError, setImageError] = useState(false);
 	const navigate = useNavigate();
 
 	const handleAddToWishlist = async () => {
@@ -54,12 +53,12 @@ export default function Card({ product, baseUrl }) {
 			onClick={handleClick}
 			style={{
 				cursor: "pointer",
-				background: "rgba(20, 20, 20, 0.95)",
+				background: "rgba(255, 255, 255, 0.1)",
+				backdropFilter: "blur(10px)",
 				padding: "20px",
 				borderRadius: "15px",
 				margin: "15px",
-				border: "1px solid rgba(255, 255, 255, 0.1)",
-				boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+				border: "1px solid rgba(255, 255, 255, 0.2)",
 			}}
 		>
 			<div className="product-image">
@@ -80,11 +79,10 @@ export default function Card({ product, baseUrl }) {
 					className="product-title"
 					style={{
 						fontSize: "1.5rem",
-						fontWeight: "700",
-						color: "#ffffff",
+						fontWeight: "bold",
+						color: "#fff",
 						marginBottom: "10px",
-						textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
-						letterSpacing: "0.5px",
+						textShadow: "0 0 10px rgba(255, 255, 255, 0.5)",
 					}}
 				>
 					{name}
@@ -92,11 +90,10 @@ export default function Card({ product, baseUrl }) {
 				<p
 					className="product-description"
 					style={{
-						fontSize: "1rem",
-						color: "#e0e0e0",
+						fontSize: "0.9rem",
+						color: "#ccc",
 						marginBottom: "15px",
-						lineHeight: "1.5",
-						fontWeight: "400",
+						lineHeight: "1.4",
 					}}
 				>
 					{description}
@@ -107,9 +104,6 @@ export default function Card({ product, baseUrl }) {
 						display: "flex",
 						justifyContent: "space-between",
 						marginBottom: "15px",
-						background: "rgba(0, 0, 0, 0.3)",
-						padding: "10px",
-						borderRadius: "8px",
 					}}
 				>
 					<div
@@ -118,44 +112,31 @@ export default function Card({ product, baseUrl }) {
 							display: "flex",
 							alignItems: "center",
 							gap: "5px",
-							color: "#FFD700",
-							fontWeight: "600",
+							color: "#ffd700",
 						}}
 					>
 						<FaStar className="star-icon" />
-						<span style={{ color: "#ffffff" }}>{rating?.toFixed(1)}</span>
+						<span>{rating?.toFixed(1)}</span>
 					</div>
-					<div
-						className="product-stock"
-						style={{
-							color: "#ffffff",
-							fontWeight: "500",
-						}}
-					>
+					<div className="product-stock" style={{ color: "#aaa" }}>
 						Stock: {stock}
 					</div>
 				</div>
 				<div
 					className="product-price gradient-text"
 					style={{
-						fontSize: "1.5rem",
-						fontWeight: "700",
+						fontSize: "1.3rem",
+						fontWeight: "bold",
 						marginBottom: "15px",
-						color: "#ff4d4d",
-						textShadow: "0 0 10px rgba(255, 77, 77, 0.3)",
+						background: "linear-gradient(45deg, #ff4d4d, #ff8080)",
+						WebkitBackgroundClip: "text",
+						WebkitTextFillColor: "transparent",
 					}}
 				>
 					Rp {price?.toLocaleString("id-ID")}
 				</div>
 				{error && (
-					<p
-						className="text-danger small"
-						style={{
-							marginBottom: "10px",
-							color: "#ff4d4d",
-							fontWeight: "500",
-						}}
-					>
+					<p className="text-danger small" style={{ marginBottom: "10px" }}>
 						{error}
 					</p>
 				)}
@@ -171,17 +152,14 @@ export default function Card({ product, baseUrl }) {
 					style={{
 						background: "linear-gradient(45deg, #ff4d4d, #ff8080)",
 						border: "none",
-						padding: "12px",
+						padding: "10px",
 						borderRadius: "8px",
-						color: "#ffffff",
-						fontWeight: "600",
+						color: "white",
+						fontWeight: "bold",
 						display: "flex",
 						alignItems: "center",
 						justifyContent: "center",
 						gap: "8px",
-						fontSize: "1rem",
-						textTransform: "uppercase",
-						letterSpacing: "1px",
 					}}
 				>
 					<FaHeart className="heart-icon" />

@@ -16,6 +16,7 @@ export default function ProductsPage({ baseUrl }) {
 		setLoading(true);
 		try {
 			const response = await axios.get(`${baseUrl}/products`);
+
 			setProducts(response.data.products);
 			setError(null);
 		} catch (err) {

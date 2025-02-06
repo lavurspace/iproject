@@ -12,14 +12,13 @@ export default function HomePage({ baseUrl }) {
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(null);
 
-	useEffect(() => {
-		fetchProducts();
-	}, []);
-
 	const fetchProducts = async () => {
 		setLoading(true);
 		try {
 			const response = await axios.get(`${baseUrl}/products`);
+
+			console.log(response.data.products, "response data");
+
 			setProducts(response.data.products);
 			setError(null);
 		} catch (err) {
@@ -50,6 +49,10 @@ export default function HomePage({ baseUrl }) {
 			link: "https://api.whatsapp.com/send?phone=6281225244975&text=Hallo%20Home%20Rec%20di%20sini%2C%20Ada%20yang%20bisa%20dibantu%3F",
 		},
 	];
+
+	useEffect(() => {
+		fetchProducts();
+	}, []);
 
 	return (
 		<div className="app d-flex flex-column min-vh-100">
