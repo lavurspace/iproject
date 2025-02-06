@@ -1,0 +1,82 @@
+[
+	{
+		"name": "Yamaha P-125 Digital Piano",
+		"description": "Digital piano 88 keys dengan weighted keys, perfect untuk studio recording maupun live performance",
+		"price": 8999000,
+		"stock": 5,
+		"rating": 4.8,
+		"image": "https://images.primanada.com/image/cache/products/yamaha-p-125-stand-800x800.jpg"
+	},
+	{
+		"name": "Shure SM7B Microphone",
+		"description": "Mikrofon dinamik profesional, cocok untuk vocal recording, podcast, dan broadcasting",
+		"price": 5499000,
+		"stock": 8,
+		"rating": 4.9,
+		"image": "https://images.tokopedia.net/img/cache/500-square/product-1/2018/11/15/32708145/32708145_463ff7c1-9f0b-4a51-8aea-d5411e6c2347_415_450.jpg"
+	},
+	{
+		"name": "Focusrite Scarlett 2i2 3rd Gen",
+		"description": "Audio interface USB dengan 2 input dan 2 output, preamp berkualitas tinggi",
+		"price": 2799000,
+		"stock": 15,
+		"rating": 4.7,
+		"image": "https://images.tokopedia.net/img/cache/700/VqbcmM/2022/8/12/1a52be1a-4271-49de-8f8c-1dc2c58401f8.jpg"
+	},
+	{
+		"name": "Fender Stratocaster Electric Guitar",
+		"description": "Gitar elektrik klasik dengan 3 single-coil pickups, maple neck, dan alder body",
+		"price": 12500000,
+		"stock": 3,
+		"rating": 4.9,
+		"image": "https://www.sweelee.co.id/cdn/shop/products/F03-014-4502-506_1538547065547_1200x1200.jpg?v=1571282751"
+	},
+	{
+		"name": "Audio-Technica ATH-M50x",
+		"description": "Professional studio monitor headphones dengan suara yang akurat dan build quality premium",
+		"price": 1899000,
+		"stock": 20,
+		"rating": 4.8,
+		"image": "https://images.tokopedia.net/img/cache/700/product-1/2016/6/3/517795/517795_73196950-ceb3-4a70-89e3-7d88420a0775.jpg"
+	},
+	{
+		"name": "Roland TD-17KVX V-Drums",
+		"description": "Electronic drum kit profesional dengan mesh heads dan modul suara canggih",
+		"price": 15999000,
+		"stock": 2,
+		"rating": 4.7,
+		"image": "https://images.tokopedia.net/img/cache/700/product-1/2019/5/3/16575601/16575601_1b700770-661c-471f-b697-7e7aff5a5e93_700_700.png"
+	},
+	{
+		"name": "Universal Audio Apollo Twin X DUO",
+		"description": "Audio interface high-end dengan DSP processing dan preamp Unison",
+		"price": 13999000,
+		"stock": 4,
+		"rating": 4.9,
+		"image": "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2024/1/25/9b9e73da-84ee-483e-8cdd-3fedc542c8e4.jpg"
+	},
+	{
+		"name": "Native Instruments Maschine MK3",
+		"description": "Production controller dan sampler dengan integration software lengkap",
+		"price": 9999000,
+		"stock": 6,
+		"rating": 4.6,
+		"image": "https://images.tokopedia.net/img/cache/700/VqbcmM/2023/11/29/881722d4-bfd8-41a1-a473-fc56ebd4f6aa.jpg"
+	},
+	{
+		"name": "AKAI Professional MPK249",
+		"description": "USB MIDI keyboard controller 49 keys dengan pad dan knobs",
+		"price": 4599000,
+		"stock": 7,
+		"rating": 4.5,
+		"image": "https://hariharimusik.id/wp-content/uploads/2022/01/mpk249_ortho_web_lg_01.jpg_0899185fd773e636b733cbaa61c2415a.jpg"
+	},
+	{
+		"name": "KRK Rokit 5 G4 (Pair)",
+		"description": "Studio monitor aktif 5 inch dengan DSP-driven EQ",
+		"price": 5299000,
+		"stock": 10,
+		"rating": 4.7,
+		"image": "https://images.tokopedia.net/img/cache/700/product-1/2019/11/19/13021069/13021069_aec18137-b4d4-4da1-8d00-2f77fe3a34d4_801_801"
+	}
+]
